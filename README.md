@@ -27,3 +27,11 @@ docker run -v local_path:/JBrowse/JBrowse/data jbrowse:v1.0 bash
 将进入JBrowse所在目录 `/JBrowse/JBrowse/`  
 通过`./bin/prepare-refseqs.pl`等命令构建数据  
 
+### 镜像构建
+
+```
+git clone https://github.com/lidongye/JBrowse.git
+cd JBrowse
+docker build -t jbrowse:v1.0 .
+docker images
+```
